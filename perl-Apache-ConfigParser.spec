@@ -3,8 +3,8 @@
 %bcond_without	tests	# don't perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Apache
-%define	pnam	ConfigParser
+%define		pdir	Apache
+%define		pnam	ConfigParser
 Summary:	Apache::ConfigParser - load Apache configuration files
 Summary(pl):	Apache::ConfigParser - wczytywanie plików konfiguracyjnych Apache'a
 Name:		perl-Apache-ConfigParser

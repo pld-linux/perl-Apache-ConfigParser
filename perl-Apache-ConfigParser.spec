@@ -47,7 +47,7 @@ zagnie¿d¿ania sekcji takich jak <VirtualHost>, <Directory> itp.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %{!?_without_tests:%{__make} test}

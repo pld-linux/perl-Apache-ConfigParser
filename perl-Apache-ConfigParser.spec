@@ -8,7 +8,7 @@ Summary:	Apache::ConfigParser - Load Apache configuration files
 Summary(pl):	Modu³ Apache::ConfigParser - wczytuj±cy pliki konfiguracyjne Apache'a
 Name:		perl-Apache-ConfigParser
 Version:	0.06
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -17,7 +17,7 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Test-Simple
 BuildRequires:	perl-Tree-DAG_Node
 %endif
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

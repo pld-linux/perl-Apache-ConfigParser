@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# don't perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Apache
 %define	pnam	ConfigParser
@@ -14,7 +15,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	3726cb960475e9153deef2ad6e203c3f
 BuildRequires:	perl-devel >= 5.6
-%if %{?_without_tests:0}%{!?_without_tests:1}
+%if %{with tests} 
 BuildRequires:	perl-Test-Simple
 BuildRequires:	perl-Tree-DAG_Node
 %endif
@@ -50,7 +51,7 @@ zagnie¿d¿ania sekcji takich jak <VirtualHost>, <Directory> itp.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT

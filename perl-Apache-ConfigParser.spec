@@ -9,7 +9,7 @@ Summary:	Apache::ConfigParser - load Apache configuration files
 Summary(pl):	Apache::ConfigParser - wczytywanie plików konfiguracyjnych Apache'a
 Name:		perl-Apache-ConfigParser
 Version:	0.06
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -59,6 +59,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+# get rid of pod docuementation
+rm -f $RPM_BUILD_ROOT%{perl_vendorlib}/Apache/ConfigParser/*.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT

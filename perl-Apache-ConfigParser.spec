@@ -7,7 +7,7 @@
 Summary:	Apache::ConfigParser - Load Apache configuration files
 Summary(pl):	Modu³ Apache::ConfigParser - wczytuj±cy pliki konfiguracyjne Apache'a
 Name:		perl-Apache-ConfigParser
-Version:	0.05
+Version:	0.06
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl

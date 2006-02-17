@@ -8,15 +8,15 @@
 Summary:	Apache::ConfigParser - load Apache configuration files
 Summary(pl):	Apache::ConfigParser - wczytywanie plików konfiguracyjnych Apache'a
 Name:		perl-Apache-ConfigParser
-Version:	0.06
-Release:	4
+Version:	1.01
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	3726cb960475e9153deef2ad6e203c3f
+# Source0-md5:	2c1a863a2fc9d32313f277066bd9ea81
 BuildRequires:	perl-devel >= 1:5.8.0
-%if %{with tests} 
+%if %{with tests}
 BuildRequires:	perl-Test-Simple
 BuildRequires:	perl-Tree-DAG_Node
 %endif
@@ -61,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 # get rid of pod docuementation
-rm -f $RPM_BUILD_ROOT%{perl_vendorlib}/Apache/ConfigParser/*.pod
+rm -f $RPM_BUILD_ROOT%{perl_vendorlib}/Apache/ConfigParser{,/}*.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT

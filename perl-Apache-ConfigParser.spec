@@ -6,7 +6,7 @@
 %define		pdir	Apache
 %define		pnam	ConfigParser
 Summary:	Apache::ConfigParser - load Apache configuration files
-Summary(pl):	Apache::ConfigParser - wczytywanie plików konfiguracyjnych Apache'a
+Summary(pl.UTF-8):   Apache::ConfigParser - wczytywanie plikÃ³w konfiguracyjnych Apache'a
 Name:		perl-Apache-ConfigParser
 Version:	1.01
 Release:	1
@@ -34,15 +34,15 @@ enable tree based searches and modifications from Tree::DAG_Node are
 also available. The tree structure is used to represent the ability to
 nest sections, such as <VirtualHost>, <Directory>, etc.
 
-%description -l pl
-Modu³ Apache::ConfigParser s³u¿y do odczytywania pliku
-konfiguracyjnego Apache'a, pozwalaj±c programom na okre¶lenie dyrektyw
-konfiguracyjnych i ich kontekstu. Wynikowy obiekt zawiera strukturê
-drzewiast± u¿ywaj±c± klasy Apache::ConfigParser::Directive, która jest
-podklas± Tree::DAG_Node, wiêc dostêpne s± tak¿e wszystkie metody z
-Tree::DAG_Node, pozwalaj±ce na przeszukiwanie drzewa i modyfikowanie.
-Struktura drzewiasta jest u¿ywana do reprezentowania mo¿liwo¶ci
-zagnie¿d¿ania sekcji takich jak <VirtualHost>, <Directory> itp.
+%description -l pl.UTF-8
+ModuÅ‚ Apache::ConfigParser sÅ‚uÅ¼y do odczytywania pliku
+konfiguracyjnego Apache'a, pozwalajÄ…c programom na okreÅ›lenie dyrektyw
+konfiguracyjnych i ich kontekstu. Wynikowy obiekt zawiera strukturÄ™
+drzewiastÄ… uÅ¼ywajÄ…cÄ… klasy Apache::ConfigParser::Directive, ktÃ³ra jest
+podklasÄ… Tree::DAG_Node, wiÄ™c dostÄ™pne sÄ… takÅ¼e wszystkie metody z
+Tree::DAG_Node, pozwalajÄ…ce na przeszukiwanie drzewa i modyfikowanie.
+Struktura drzewiasta jest uÅ¼ywana do reprezentowania moÅ¼liwoÅ›ci
+zagnieÅ¼dÅ¼ania sekcji takich jak <VirtualHost>, <Directory> itp.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

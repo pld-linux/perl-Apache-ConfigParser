@@ -6,7 +6,7 @@
 %define		pdir	Apache
 %define		pnam	ConfigParser
 Summary:	Apache::ConfigParser - load Apache configuration files
-Summary(pl.UTF-8):   Apache::ConfigParser - wczytywanie plików konfiguracyjnych Apache'a
+Summary(pl.UTF-8):	Apache::ConfigParser - wczytywanie plików konfiguracyjnych Apache'a
 Name:		perl-Apache-ConfigParser
 Version:	1.01
 Release:	1

@@ -4,7 +4,6 @@
 
 %define		pdir	Apache
 %define		pnam	ConfigParser
-%include	/usr/lib/rpm/macros.perl
 Summary:	Apache::ConfigParser - load Apache configuration files
 Summary(pl.UTF-8):	Apache::ConfigParser - wczytywanie plików konfiguracyjnych Apache'a
 Name:		perl-Apache-ConfigParser
